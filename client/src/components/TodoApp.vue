@@ -1,6 +1,6 @@
 <template>
   <div class="todo-app">
-    <h1>Lista De Tareas</h1>
+    <h1>Agregar Tareas</h1>
     <input 
       v-model="newTask" 
       placeholder="Añadir tarea..." 

@@ -1,13 +1,45 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vite App</title>
+    <style>
+      /* Estilos para el navbar */
+      .navbar {
+        background-color: #28a745; /* Verde */
+        color: white;
+        padding: 15px 0;
+        text-align: center;
+        font-size: 1.5rem;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+      }
+
+      /* Asegura que el contenido no quede tapado por el navbar fijo */
+      body {
+        margin-top: 60px; /* Ajusta este valor según el tamaño del navbar */
+      }
+    </style>
   </head>
   <body>
+
+  
+    <div class="navbar">
+      <h1>Mi Aplicación de Tareas</h1>
+    </div>
+
+    <!-- Elemento donde Vue se montará -->
     <div id="app"></div>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
+
+
+
+
