@@ -65,13 +65,14 @@ html, body {
 }
 
 .todo-app {
-  max-width: 450px;
-  width: 500%; /* Para que ocupe todo el espacio disponible en pantallas pequeñas */
+  width: 100%; /* La aplicación tomará todo el ancho disponible */
+  max-width: 450px; /* Límite máximo de ancho */
   padding: 30px;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  box-sizing: border-box; /* Asegura que el padding no se agregue al ancho */
 }
 
 h1 {
